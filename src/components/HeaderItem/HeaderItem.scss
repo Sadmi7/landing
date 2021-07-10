@@ -1,0 +1,13 @@
+.HeaderItem {
+  display: flex;
+  align-items: center;
+  padding-right: 15px;
+  cursor: pointer;
+  &_Icon {
+    padding: 5px;
+  }
+}
+
+.HeaderItem:active {
+  opacity: 0.7;
+}

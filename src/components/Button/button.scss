@@ -1,0 +1,19 @@
+.Button {
+  width: 270px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  background-color: #ff8c00;
+  color: #ffffff;
+  font-size: 25px;
+  cursor: pointer;
+  img {
+    height: 21px;
+  }
+}
+
+.Button:active {
+  opacity: 0.7;
+}

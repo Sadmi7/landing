@@ -1,0 +1,35 @@
+.Popup {
+  padding: 0 150px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #2a2e31;
+  z-index: 1;
+  &_Text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    color: #ffffff;
+    top: 25px;
+  }
+  &_Title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70px;
+  }
+  &_Subtitle {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 32px;
+    margin-bottom: 80px;
+  }
+  &_Input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: 500;
+  }
+}

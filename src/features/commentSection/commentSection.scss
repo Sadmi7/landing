@@ -1,0 +1,52 @@
+.CommentSection {
+  width: 100%;
+  max-width: 1600px;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+
+  &_MainText {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    left: 150px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 60px;
+    color: #ffffff;
+  }
+  &_Subtitle {
+    padding-bottom: 40px;
+  }
+  &_Button {
+    margin-top: 30px;
+    background-color: #1e1e1e;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  &_MainContent {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+}
+
+.SplitCarouselWrapper {
+  width: 100%;
+  position: absolute;
+
+  .SplitCarousel {
+    height: 100%;
+  }
+}
+
+.split-carousel-item--content {
+  display: flex;
+  align-items: center;
+  justify-content: center !important;
+}

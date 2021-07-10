@@ -1,0 +1,12 @@
+.Header {
+  width: 100%;
+  color: #8a8c8e;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  &_Number {
+    color: #ff8c00;
+    display: flex;
+    align-items: center;
+  }
+}

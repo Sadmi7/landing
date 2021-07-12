@@ -9,8 +9,13 @@
   color: #ffffff;
   font-size: 25px;
   cursor: pointer;
+  border: none;
   img {
     height: 21px;
+  }
+  @media only screen and (max-width: 1000px) {
+    width: 200px;
+    height: 40px;
   }
 }
 

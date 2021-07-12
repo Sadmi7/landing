@@ -12,13 +12,13 @@
       />
     </div>
     <div class="CommentSection_MainContent">
-      <Button title="Хочу как они" />
-      <div>
-        <img alt="Circle" src="@/assets/circle.png" />
-      </div>
-      <div>
+      <div class="CommentSection_Slider">
         <Slider />
       </div>
+      <div class="Circle"></div>
+    </div>
+    <div class="CommentSection_FooterButton">
+      <Button title="Хочу как они" />
     </div>
   </div>
 </template>

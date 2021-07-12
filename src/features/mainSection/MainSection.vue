@@ -11,8 +11,12 @@
           <h2 class="MainSection_Subtitle">
             Попробуйте 7 дней за 1€ при первой подписке
           </h2>
-          <Button class="MainSection_Button" title="Узнать как" />
-          <!-- <Popup /> -->
+          <Button
+            class="MainSection_Button"
+            title="Узнать как"
+            @click="onOpenModal()"
+          />
+          <Popup v-if="isVisibleModal" :onClose="() => onCloseModal()" />
         </div>
       </div>
       <div class="Photo">
@@ -21,6 +25,7 @@
         <img class="Photo_Item2" alt="Problem2" src="@/assets/problem2.png" />
         <img class="Photo_Item3" alt="Problem3" src="@/assets/problem3.png" />
       </div>
+      <Button class="MobileButton" title="Узнать как" @click="onOpenModal()" />
     </div>
   </div>
 </template>
@@ -28,13 +33,26 @@
 <script>
 import Header from "@/features/header/Header";
 import Button from "@/components/Button/Button";
-// import Popup from "@/components/Popup/Popup";
+import Popup from "@/components/Popup/Popup";
 export default {
   name: "MainSection",
   components: {
     Header,
     Button,
-    // Popup,
+    Popup,
+  },
+  data() {
+    return {
+      isVisibleModal: false,
+    };
+  },
+  methods: {
+    onOpenModal() {
+      this.isVisibleModal = true;
+    },
+    onCloseModal() {
+      this.isVisibleModal = false;
+    },
   },
 };
 </script>

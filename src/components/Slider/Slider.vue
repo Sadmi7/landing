@@ -1,27 +1,29 @@
 <template>
   <Swiper
     ref="{swiperRef}"
-    :slidesPerView="3"
+    :updateOnWindowResize="true"
+    :slidesPerView="windowWidth > 1000 ? 3 : 1"
     :centeredSlides="true"
-    :spaceBetween="30"
-    :pagination="{
-      type: 'fraction',
-    }"
     :navigation="true"
+    :loop="true"
     class="mySwiper"
   >
-    <SwiperSlide>Slide 1</SwiperSlide>
-    <SwiperSlide>Slide 2</SwiperSlide>
-    <SwiperSlide>Slide 3</SwiperSlide>
-    <SwiperSlide>Slide 4</SwiperSlide>
+    <SwiperSlide><img src="@/assets/comment.png" alt="comment"/></SwiperSlide>
+    <SwiperSlide><img src="@/assets/comment.png" alt="comment"/></SwiperSlide>
+    <SwiperSlide><img src="@/assets/comment.png" alt="comment"/></SwiperSlide>
+    <SwiperSlide><img src="@/assets/comment.png" alt="comment"/></SwiperSlide>
+    <SwiperSlide><img src="@/assets/comment.png" alt="comment"/></SwiperSlide>
+    <SwiperSlide><img src="@/assets/comment.png" alt="comment"/></SwiperSlide>
+    <SwiperSlide><img src="@/assets/comment.png" alt="comment"/></SwiperSlide>
+    <SwiperSlide><img src="@/assets/comment.png" alt="comment"/></SwiperSlide>
+    <SwiperSlide><img src="@/assets/comment.png" alt="comment"/></SwiperSlide>
   </Swiper>
 </template>
 
 <script>
-// Import Swiper Vue.js components
+import SwiperCore, { Pagination, Navigation } from "swiper/core";
 import { Swiper, SwiperSlide } from "swiper/vue";
 
-// Import Swiper styles
 import "swiper/swiper.scss";
 
 import "swiper/components/pagination/pagination.min.css";
@@ -29,10 +31,6 @@ import "swiper/components/navigation/navigation.min.css";
 
 import "./slider.scss";
 
-// import Swiper core and required modules
-import SwiperCore, { Pagination, Navigation } from "swiper/core";
-
-// install Swiper modules
 SwiperCore.use([Pagination, Navigation]);
 
 export default {
@@ -42,8 +40,28 @@ export default {
     SwiperSlide,
   },
   data() {
-    return {};
+    return {
+      windowWidth: 0,
+    };
   },
-  methods: {},
+  created() {
+    window.addEventListener("resize", this.handleResize);
+    this.handleResize();
+  },
+  destroyed() {
+    window.removeEventListener("resize", this.handleResize);
+  },
+  methods: {
+    handleResize() {
+      this.windowWidth = window.innerWidth;
+    },
+  },
 };
 </script>
+
+<style lang="scss" scoped>
+@import "./slider.scss";
+img {
+  width: 250px;
+}
+</style>

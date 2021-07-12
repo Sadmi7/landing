@@ -1,11 +1,14 @@
 <template>
   <div id="app">
     <SideMenu />
-    <MainSection />
-    <UnderLine />
-    <InfoSection />
-    <UnderLine />
-    <CommentSection />
+    <div id="appWrapper">
+      <MainSection />
+
+      <UnderLine />
+      <InfoSection />
+      <UnderLine />
+      <CommentSection />
+    </div>
   </div>
 </template>
 
@@ -35,10 +38,14 @@ export default {
   text-align: center;
   color: #2c3e50;
   background-color: #2a2e31;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   user-select: none;
+}
+#appWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 img {
   -webkit-user-drag: none;

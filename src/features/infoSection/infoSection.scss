@@ -1,28 +1,35 @@
 .InfoSection {
   width: 100%;
-  max-width: 1600px;
-  height: 1000px;
-  margin-top: 50px;
+  height: 1200px;
   display: flex;
   align-items: flex-end;
   flex-direction: column;
   position: relative;
+  @media only screen and (max-width: 1000px) {
+    height: unset;
+    padding-top: 100px;
+  }
   &_MainText {
     position: absolute;
-    top: 250px;
-    right: 200px;
+    top: 300px;
+    right: 250px;
     color: #ffffff;
     font-weight: bold;
     font-size: 50px;
+    @media only screen and (max-width: 1000px) {
+      top: 320px;
+      left: 40vmin;
+      right: unset;
+      font-size: 26px;
+    }
   }
-}
-
-.Graph {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  .BusinessGraphic,
-  .Businessman {
+  &_Graph {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  &_BusinessGraphic,
+  &_Businessman {
     height: 725px;
     width: 100%;
     position: absolute;
@@ -30,16 +37,27 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  .Businessman {
+  &_BusinessGraphic {
+    @media only screen and (max-width: 1000px) {
+      display: none;
+    }
+  }
+  &_Businessman {
     width: 170px;
-    top: calc(36px * 10);
-    left: calc(71px * 10);
+    top: calc(45px * 10);
+    left: 45%;
+    @media only screen and (max-width: 1000px) {
+      width: 86px;
+      height: 375px;
+      top: 350px;
+      left: 22vmin;
+    }
   }
 
-  .InfoSection_Image {
+  &_Image {
     margin-right: 15px;
   }
-  .InfoSection_Text {
+  &_Text {
     width: 100%;
     display: flex;
     align-items: center;
@@ -47,5 +65,98 @@
     position: absolute;
     bottom: 150px;
     color: #ffffff;
+    @media only screen and (max-width: 1000px) {
+      position: unset;
+      font-size: 11px;
+      text-align: left;
+      padding: 0 20px 100px 20px;
+    }
+  }
+}
+
+.MobileGraph {
+  display: none;
+  @media only screen and (max-width: 1000px) {
+    height: 560px;
+    display: flex;
+    position: relative;
+    .GraphPoint1,
+    .GraphPoint2,
+    .GraphPoint3,
+    .GraphPoint4,
+    .GraphPoint5,
+    .GraphPoint6,
+    .GraphPoint7 {
+      width: auto;
+      height: 20px;
+      display: flex;
+      position: absolute;
+      &_Circle {
+        width: 18px;
+        height: 18px;
+        background-color: orange;
+        border: 2px solid white;
+        border-radius: 50%;
+      }
+      &_Text {
+        width: 160px;
+        height: 35px;
+        padding-left: 10px;
+        color: white;
+        font-size: 12px;
+        word-break: break-word;
+        text-align: left;
+      }
+    }
+
+    .GraphPoint1 {
+      top: 45px;
+      margin-left: 128px;
+    }
+
+    .GraphPoint2 {
+      top: 95px;
+      margin-left: 100px;
+    }
+
+    .GraphPoint3 {
+      top: 150px;
+      margin-left: 94px;
+    }
+    .GraphPoint4 {
+      top: 310px;
+      margin-left: 100px;
+      &_Circle {
+        background-color: blue;
+      }
+    }
+
+    .GraphPoint5 {
+      top: 380px;
+      margin-left: 113px;
+      &_Circle {
+        background-color: blue;
+      }
+    }
+
+    .GraphPoint6 {
+      top: 440px;
+      margin-left: 115px;
+      &_Circle {
+        background-color: blue;
+      }
+    }
+
+    .GraphPoint7 {
+      top: 500px;
+      margin-left: 139px;
+      &_Circle {
+        background-color: blue;
+      }
+    }
+
+    img {
+      padding-left: 25px;
+    }
   }
 }

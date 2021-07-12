@@ -1,8 +1,8 @@
 <template>
-  <div class="Button">
+  <button class="Button">
     {{ title }}
     <img class="HeaderItem_Icon" v-if="rightIcon" v-bind:src="rightIcon" />
-  </div>
+  </button>
 </template>
 
 <script>

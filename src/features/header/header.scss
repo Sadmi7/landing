@@ -4,7 +4,10 @@
   align-items: center;
   justify-content: flex-end;
   color: #8a8c8e;
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 1250px) {
+    display: none;
+  }
+  @media only screen and (max-width: 768px) {
     display: none;
   }
   &_Number {

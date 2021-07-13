@@ -5,7 +5,7 @@
   align-items: flex-end;
   flex-direction: column;
   position: relative;
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 768px) {
     height: unset;
     padding-top: 100px;
   }
@@ -16,9 +16,9 @@
     color: #ffffff;
     font-weight: bold;
     font-size: 50px;
-    @media only screen and (max-width: 1000px) {
+    @media only screen and (max-width: 768px) {
       top: 320px;
-      left: 40vmin;
+      left: 47vmin;
       right: unset;
       font-size: 26px;
     }
@@ -38,7 +38,7 @@
     transform: translate(-50%, -50%);
   }
   &_BusinessGraphic {
-    @media only screen and (max-width: 1000px) {
+    @media only screen and (max-width: 768px) {
       display: none;
     }
   }
@@ -46,11 +46,11 @@
     width: 170px;
     top: calc(45px * 10);
     left: 45%;
-    @media only screen and (max-width: 1000px) {
+    @media only screen and (max-width: 768px) {
       width: 86px;
       height: 375px;
       top: 350px;
-      left: 22vmin;
+      margin-left: -45px;
     }
   }
 
@@ -63,9 +63,9 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: 150px;
+    bottom: 260px;
     color: #ffffff;
-    @media only screen and (max-width: 1000px) {
+    @media only screen and (max-width: 768px) {
       position: unset;
       font-size: 11px;
       text-align: left;
@@ -76,10 +76,11 @@
 
 .MobileGraph {
   display: none;
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 768px) {
     height: 560px;
     display: flex;
     position: relative;
+    justify-content: center;
     .GraphPoint1,
     .GraphPoint2,
     .GraphPoint3,
@@ -111,21 +112,21 @@
 
     .GraphPoint1 {
       top: 45px;
-      margin-left: 128px;
+      margin-left: 144px;
     }
 
     .GraphPoint2 {
       top: 95px;
-      margin-left: 100px;
+      margin-left: 93px;
     }
 
     .GraphPoint3 {
       top: 150px;
-      margin-left: 94px;
+      margin-left: 81px;
     }
     .GraphPoint4 {
       top: 310px;
-      margin-left: 100px;
+      margin-left: 95px;
       &_Circle {
         background-color: blue;
       }
@@ -141,7 +142,7 @@
 
     .GraphPoint6 {
       top: 440px;
-      margin-left: 115px;
+      margin-left: 124px;
       &_Circle {
         background-color: blue;
       }
@@ -149,7 +150,7 @@
 
     .GraphPoint7 {
       top: 500px;
-      margin-left: 139px;
+      margin-left: 170px;
       &_Circle {
         background-color: blue;
       }

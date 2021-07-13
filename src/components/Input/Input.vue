@@ -1,6 +1,11 @@
 <template>
   <div>
-    <input type="text" class="Input" :placeholder="placeholder" />
+    <input
+      type="text"
+      :class="isError ? 'InputError' : 'Input'"
+      :placeholder="placeholder"
+    />
+    <span class="ErrorText">{{ isError ? errorText : "" }}</span>
   </div>
 </template>
 
@@ -9,6 +14,8 @@ export default {
   name: "Input",
   props: {
     placeholder: String,
+    isError: Boolean,
+    errorText: String,
   },
 };
 </script>

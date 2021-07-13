@@ -7,8 +7,8 @@
     <div class="InfoSection_Graph">
       <img
         class="InfoSection_BusinessGraphic"
-        alt="BusinessGraphic"
-        src="@/assets/graph.png"
+        alt="vector"
+        src="@/assets/vector.png"
       />
       <div class="MobileGraph">
         <img alt="verticalVector" src="@/assets/verticalVector.png" />

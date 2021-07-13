@@ -1,12 +1,24 @@
-.Input {
+.Input,
+.InputError {
   width: 400px;
   height: 50px;
   border-radius: 10px;
   margin-bottom: 20px;
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 768px) {
     width: 280px;
     height: 50px;
     border-radius: 5px;
     margin-bottom: 10px;
   }
+}
+
+.InputError {
+  border: 1px solid red;
+}
+
+.ErrorText {
+  margin-left: 10px;
+  color: red;
+  font-size: 16px;
+  font-weight: 100;
 }

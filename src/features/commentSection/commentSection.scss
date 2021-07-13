@@ -6,6 +6,10 @@
   justify-content: center;
   position: relative;
 
+  @media only screen and (max-width: 768px) {
+    height: 1000px;
+  }
+
   &_MainText {
     display: flex;
     flex-direction: column;
@@ -16,7 +20,7 @@
     font-weight: bold;
     font-size: 60px;
     color: #ffffff;
-    @media only screen and (max-width: 1000px) {
+    @media only screen and (max-width: 768px) {
       padding: 30px;
       left: 0;
       font-size: 26px;
@@ -43,11 +47,11 @@
     position: absolute;
     bottom: 60px;
     left: 85px;
-    @media only screen and (max-width: 1000px) {
+    @media only screen and (max-width: 768px) {
       display: flex;
       justify-content: center;
       position: unset;
-      margin-top: 80px;
+      margin-top: 125px;
     }
   }
 }

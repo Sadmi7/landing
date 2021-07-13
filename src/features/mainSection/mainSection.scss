@@ -4,7 +4,11 @@
   display: flex;
   flex-direction: column;
   padding: 40px 30px 0 30px;
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 1250px) {
+    height: unset;
+    padding: 20px;
+  }
+  @media only screen and (max-width: 768px) {
     height: unset;
     padding: 20px;
   }
@@ -12,26 +16,22 @@
   &_Content {
     height: 100%;
     display: flex;
-    margin-top: 20px;
-    @media only screen and (max-width: 1000px) {
+    padding: 140px 140px 0 140px;
+    @media only screen and (max-width: 1250px) {
       flex-direction: column;
+      padding: 20px 20px 0 20px;
+      align-items: center;
+    }
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+      padding: 10px 10px 0 10px;
+      align-items: center;
     }
   }
   &_Text {
-    position: relative;
-    width: 50%;
-    @media only screen and (max-width: 1000px) {
+    width: 70%;
+    @media only screen and (max-width: 768px) {
       width: 100%;
-    }
-  }
-  &_TextWrapper {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    left: 85px;
-    top: 120px;
-    @media only screen and (max-width: 1000px) {
-      position: unset;
     }
   }
   &_Title {
@@ -39,104 +39,110 @@
     color: #ffffff;
     font-size: 60px;
     margin: 0;
+    text-align: left;
     word-wrap: break-word;
-    @media only screen and (max-width: 1000px) {
+    @media only screen and (max-width: 1250px) {
+      font-size: 42px;
+    }
+    @media only screen and (max-width: 768px) {
       font-size: 24px;
     }
   }
   &_Subtitle {
     color: #ff8c00;
+    text-align: left;
     font-weight: 500;
     font-size: 25px;
-    @media only screen and (max-width: 1000px) {
+    @media only screen and (max-width: 1250px) {
+      font-size: 20px;
+      padding-bottom: 50px;
+    }
+    @media only screen and (max-width: 768px) {
       font-size: 14px;
     }
   }
-  &_Title,
-  &_Subtitle {
-    text-align: left;
-  }
   &_Button {
-    margin-top: 30px;
-    @media only screen and (max-width: 1000px) {
+    margin-top: 90px;
+    @media only screen and (max-width: 1250px) {
+      display: none;
+    }
+    @media only screen and (max-width: 768px) {
       display: none;
     }
   }
 }
 
 .Photo {
-  width: 800px;
-  position: relative;
-  @media only screen and (max-width: 1000px) {
-    width: 100%;
-    height: 350px;
+  width: 650px;
+  @media only screen and (max-width: 1250px) {
+    width: 550px;
+  }
+  @media only screen and (max-width: 768px) {
+    width: 250px;
   }
   &_Main {
-    height: auto;
-    width: 660px;
-    max-width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-    @media only screen and (max-width: 1000px) {
-      position: unset;
-      transform: unset;
-      max-width: 245px;
+    width: 650px;
+    @media only screen and (max-width: 1250px) {
+      width: 550px;
+    }
+    @media only screen and (max-width: 768px) {
+      width: 250px;
     }
   }
   &_Item1,
   &_Item2,
   &_Item3 {
-    height: auto;
-    width: 330px;
-    max-width: 40%;
+    margin-top: -700px;
+    margin-left: 370px;
     animation: moveInRight 1s ease-out forwards;
     animation-delay: 3s;
-    position: absolute;
-    top: 90px;
-    right: 12vmin;
     opacity: 0;
-    @media only screen and (max-width: 1000px) {
-      width: 150px;
-      max-width: unset;
-      height: unset;
-      top: 120px;
-
-      right: 15px;
+    @media only screen and (max-width: 1250px) {
+      margin-top: -550px;
+      margin-left: 305px;
+    }
+    @media only screen and (max-width: 768px) {
+      margin-top: -140px;
+      margin-left: 105px;
     }
   }
   &_Item2 {
+    margin-top: -410px;
+    margin-left: -85px;
     animation-delay: 4s;
-    top: 42%;
-    right: unset;
-    left: -85px;
-    @media only screen and (max-width: 1000px) {
-      top: unset;
-      right: 0;
-      bottom: 112px;
-      left: 0;
+    @media only screen and (max-width: 1250px) {
+      margin-top: -300px;
+      margin-left: -20px;
+    }
+    @media only screen and (max-width: 768px) {
+      margin-top: -75px;
+      margin-left: -25px;
     }
   }
   &_Item3 {
+    margin-top: -175px;
+    margin-left: 290px;
     animation-delay: 5s;
-    top: unset;
-    right: 20vmin;
-    bottom: 180px;
-    @media only screen and (max-width: 1000px) {
-      top: unset;
-      right: 15px;
-      bottom: 50px;
-      left: unset;
+    @media only screen and (max-width: 1250px) {
+      margin-top: -155px;
+      margin-left: 260px;
+    }
+    @media only screen and (max-width: 768px) {
+      margin-top: -15px;
+      margin-left: 80px;
     }
   }
 }
 
 .MobileButton {
   display: none;
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 1250px) {
+    margin-top: 80px;
     display: flex;
-    width: 100%;
+  }
+  @media only screen and (max-width: 768px) {
+    margin-top: 80px;
+    display: flex;
   }
 }
 

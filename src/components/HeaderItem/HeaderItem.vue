@@ -18,5 +18,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import "./HeaderItem";
+@import "./headerItem";
 </style>

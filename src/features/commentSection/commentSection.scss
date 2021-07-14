@@ -5,7 +5,13 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
-
+  @media only screen and (max-width: 1400px) {
+    height: 1300px;
+  }
+  @media only screen and (max-width: 1100px) {
+    height: 1200px;
+  }
+  height: 1300px;
   @media only screen and (max-width: 768px) {
     height: 1000px;
   }
@@ -38,6 +44,18 @@
     align-items: center;
     position: relative;
     margin-top: 100px;
+    @media only screen and (max-width: 1400px) {
+      margin-top: 290px;
+      padding-bottom: 80px;
+    }
+    @media only screen and (max-width: 1100px) {
+      margin-top: 400px;
+      padding-bottom: 140px;
+    }
+    @media only screen and (max-width: 768px) {
+      margin-top: 100px;
+      padding-bottom: unset;
+    }
   }
   &_Slider {
     width: 100%;
@@ -47,6 +65,11 @@
     position: absolute;
     bottom: 60px;
     left: 85px;
+    @media only screen and (max-width: 1400px) {
+      display: flex;
+      justify-content: center;
+      position: unset;
+    }
     @media only screen and (max-width: 768px) {
       display: flex;
       justify-content: center;

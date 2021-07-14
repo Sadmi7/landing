@@ -2,33 +2,43 @@
   width: 100%;
   height: 1200px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   position: relative;
-  @media only screen and (max-width: 768px) {
-    height: unset;
+  @media only screen and (max-width: 900px) {
+    height: 1000px;
     padding-top: 100px;
   }
   &_MainText {
     position: absolute;
-    top: 300px;
-    right: 250px;
+    top: 130px;
+    right: 270px;
     color: #ffffff;
     font-weight: bold;
     font-size: 50px;
-    @media only screen and (max-width: 768px) {
-      top: 320px;
-      left: 47vmin;
+    @media only screen and (max-width: 1720px) {
+      top: 125px;
+      right: 240px;
+    }
+    @media only screen and (max-width: 1500px) {
+      top: -80px;
+      right: 45px;
+      font-size: 60px;
+    }
+    @media only screen and (max-width: 1200px) {
+      top: 140px;
+      right: 140px;
+      font-size: 25px;
+    }
+    @media only screen and (max-width: 900px) {
+      top: 210px;
+      left: 230px;
       right: unset;
       font-size: 26px;
     }
   }
-  &_Graph {
-    height: 100%;
-    width: 100%;
-    position: relative;
-  }
-  &_BusinessGraphic,
+  &_HorizontalGraphic,
   &_Businessman {
     height: 725px;
     width: 100%;
@@ -37,23 +47,48 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  &_BusinessGraphic {
-    @media only screen and (max-width: 768px) {
+  &_HorizontalGraphic {
+    width: 1720px;
+    position: unset;
+    transform: unset;
+    @media only screen and (max-width: 1720px) {
+      width: 1500px;
+    }
+    @media only screen and (max-width: 1500px) {
+      width: 1200px;
+    }
+    @media only screen and (max-width: 1200px) {
+      width: 900px;
+    }
+    @media only screen and (max-width: 900px) {
       display: none;
     }
   }
   &_Businessman {
     width: 170px;
-    top: calc(45px * 10);
-    left: 45%;
-    @media only screen and (max-width: 768px) {
+    top: 250px;
+    left: 750px;
+    @media only screen and (max-width: 1720px) {
+      top: 245px;
+      left: 690px;
+    }
+    @media only screen and (max-width: 1500px) {
+      top: 240px;
+      left: 620px;
+    }
+    @media only screen and (max-width: 1200px) {
+      width: 105px;
+      height: 450px;
+      top: 260px;
+      left: 480px;
+    }
+    @media only screen and (max-width: 900px) {
       width: 86px;
       height: 375px;
       top: 350px;
-      margin-left: -45px;
+      margin-left: -325px;
     }
   }
-
   &_Image {
     margin-right: 15px;
   }
@@ -63,24 +98,33 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: 260px;
+    bottom: 0;
     color: #ffffff;
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 1500px) {
+      bottom: -50px;
+    }
+    @media only screen and (max-width: 1200px) {
+      width: 77%;
+      bottom: -55px;
+      padding: 0 20px 0 20px;
+      text-align: left;
+    }
+    @media only screen and (max-width: 900px) {
       position: unset;
       font-size: 11px;
       text-align: left;
       padding: 0 20px 100px 20px;
     }
   }
-}
-
-.MobileGraph {
-  display: none;
-  @media only screen and (max-width: 768px) {
-    height: 560px;
+  &_GraphWrapper {
+    height: 700px;
     display: flex;
-    position: relative;
     justify-content: center;
+    position: relative;
+    @media only screen and (max-width: 900px) {
+      flex-direction: column;
+      padding-left: 70px;
+    }
     .GraphPoint1,
     .GraphPoint2,
     .GraphPoint3,
@@ -100,64 +144,205 @@
         border-radius: 50%;
       }
       &_Text {
-        width: 160px;
-        height: 35px;
-        padding-left: 10px;
+        width: 201px;
+        height: 110px;
+        margin-left: -20px;
+        margin-top: -85px;
         color: white;
-        font-size: 12px;
+        font-size: 21px;
         word-break: break-word;
         text-align: left;
+        top: 55px;
+        @media only screen and (max-width: 1720px) {
+          font-size: 19px;
+        }
+        @media only screen and (max-width: 1500px) {
+          width: 160px;
+          margin-top: -68px;
+          font-size: 16px;
+        }
+        @media only screen and (max-width: 1200px) {
+          font-size: 13px;
+        }
+        @media only screen and (max-width: 900px) {
+          width: 135px;
+          margin-top: -5px;
+          margin-left: 10px;
+          font-size: 12px;
+        }
       }
     }
 
     .GraphPoint1 {
-      top: 45px;
-      margin-left: 144px;
+      top: 60px;
+      left: 170px;
+      @media only screen and (max-width: 1720px) {
+        top: 45px;
+        left: 135px;
+      }
+      @media only screen and (max-width: 1500px) {
+        top: 180px;
+        left: 175px;
+      }
+      @media only screen and (max-width: 1200px) {
+        top: 219px;
+        left: 160px;
+      }
+      @media only screen and (max-width: 900px) {
+        top: -65px;
+        left: 228px;
+      }
     }
 
     .GraphPoint2 {
-      top: 95px;
-      margin-left: 93px;
+      top: 154px;
+      left: 230px;
+      @media only screen and (max-width: 1720px) {
+        top: 187px;
+        left: 230px;
+      }
+      @media only screen and (max-width: 1500px) {
+        top: 245px;
+        left: 285px;
+      }
+      @media only screen and (max-width: 1200px) {
+        top: 284px;
+        left: 270px;
+      }
+      @media only screen and (max-width: 900px) {
+        top: 0px;
+        left: 190px;
+      }
     }
 
     .GraphPoint3 {
-      top: 150px;
-      margin-left: 81px;
+      top: 255px;
+      left: 450px;
+      @media only screen and (max-width: 1720px) {
+        top: 267px;
+        left: 430px;
+      }
+      @media only screen and (max-width: 1500px) {
+        top: 340px;
+        left: 405px;
+      }
+      @media only screen and (max-width: 1200px) {
+        top: 373px;
+        left: 315px;
+      }
+      @media only screen and (max-width: 900px) {
+        top: 107px;
+        left: 190px;
+      }
     }
     .GraphPoint4 {
-      top: 310px;
-      margin-left: 95px;
+      top: 440px;
+      left: 800px;
+      @media only screen and (max-width: 1720px) {
+        top: 444px;
+        left: 755px;
+      }
+      @media only screen and (max-width: 1500px) {
+        top: 445px;
+        left: 645px;
+      }
+      @media only screen and (max-width: 1200px) {
+        top: 455px;
+        left: 517px;
+      }
+      @media only screen and (max-width: 900px) {
+        top: 329px;
+        left: 193px;
+      }
       &_Circle {
         background-color: blue;
       }
     }
 
     .GraphPoint5 {
-      top: 380px;
-      margin-left: 113px;
+      top: 459px;
+      left: 1010px;
+      @media only screen and (max-width: 1720px) {
+        top: 485px;
+        left: 948px;
+      }
+      @media only screen and (max-width: 1500px) {
+        top: 485px;
+        left: 755px;
+      }
+      @media only screen and (max-width: 1200px) {
+        top: 495px;
+        left: 570px;
+      }
+      @media only screen and (max-width: 900px) {
+        top: 420px;
+        left: 215px;
+      }
       &_Circle {
         background-color: blue;
       }
     }
 
     .GraphPoint6 {
-      top: 440px;
-      margin-left: 124px;
+      top: 529px;
+      left: 1140px;
+      @media only screen and (max-width: 1720px) {
+        top: 585px;
+        left: 1091px;
+      }
+      @media only screen and (max-width: 1500px) {
+        top: 565px;
+        left: 830px;
+      }
+      @media only screen and (max-width: 1200px) {
+        top: 550px;
+        left: 608px;
+      }
+      @media only screen and (max-width: 900px) {
+        top: 505px;
+        left: 200px;
+      }
       &_Circle {
         background-color: blue;
       }
     }
 
     .GraphPoint7 {
-      top: 500px;
-      margin-left: 170px;
+      top: 595px;
+      left: 1300px;
+      @media only screen and (max-width: 1720px) {
+        top: 608px;
+        left: 1258px;
+      }
+      @media only screen and (max-width: 1500px) {
+        top: 600px;
+        left: 940px;
+      }
+      @media only screen and (max-width: 1200px) {
+        top: 594px;
+        left: 670px;
+      }
+      @media only screen and (max-width: 900px) {
+        top: 600px;
+        left: 245px;
+      }
       &_Circle {
         background-color: blue;
       }
     }
+  }
 
-    img {
-      padding-left: 25px;
+  &_VerticalGraphic {
+    display: none;
+    @media only screen and (max-width: 900px) {
+      width: 400px;
+      display: flex;
+    }
+  }
+  &_HorizontalGraphic {
+    display: inline;
+    @media only screen and (max-width: 900px) {
+      display: none;
     }
   }
 }

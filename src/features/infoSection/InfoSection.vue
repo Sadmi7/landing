@@ -1,50 +1,53 @@
 <template>
   <div class="InfoSection">
-    <div class="InfoSection_MainText">
-      Но с другой <br />
-      стороны...
-    </div>
-    <div class="InfoSection_Graph">
+    <div class="InfoSection_GraphWrapper">
+      <div class="InfoSection_MainText">
+        Но с другой <br />
+        стороны...
+      </div>
       <img
-        class="InfoSection_BusinessGraphic"
-        alt="vector"
-        src="@/assets/vector.png"
+        alt="verticalVector"
+        class="InfoSection_VerticalGraphic"
+        src="@/assets/verticalVector.png"
       />
-      <div class="MobileGraph">
-        <img alt="verticalVector" src="@/assets/verticalVector.png" />
-        <div class="GraphPoint1">
-          <div class="GraphPoint1_Circle"></div>
-          <div class="GraphPoint1_Text">
-            Интересен трейдинг, прошёл обучение
-          </div>
+
+      <img
+        class="InfoSection_HorizontalGraphic"
+        alt="vector"
+        src="@/assets/desktopVector.png"
+      />
+      <div class="GraphPoint1">
+        <div class="GraphPoint1_Circle"></div>
+        <div class="GraphPoint1_Text">
+          Интересен трейдинг, прошёл обучение
         </div>
-        <div class="GraphPoint2">
-          <div class="GraphPoint2_Circle"></div>
-          <div class="GraphPoint2_Text">
-            Начал торговать, думая что теперь покорю мир
-          </div>
+      </div>
+      <div class="GraphPoint2">
+        <div class="GraphPoint2_Circle"></div>
+        <div class="GraphPoint2_Text">
+          Начал торговать, думая что теперь покорю мир
         </div>
-        <div class="GraphPoint3">
-          <div class="GraphPoint3_Circle"></div>
-          <div class="GraphPoint3_Text">Получаю какую-то прибыль</div>
-        </div>
-        <div class="GraphPoint4">
-          <div class="GraphPoint4_Circle"></div>
-          <div class="GraphPoint4_Text">Не хватает мнения профессионала</div>
-        </div>
-        <div class="GraphPoint5">
-          <div class="GraphPoint5_Circle"></div>
-          <div class="GraphPoint5_Text">Не с кем обсудить свою торговлю</div>
-        </div>
-        <div class="GraphPoint6">
-          <div class="GraphPoint6_Circle"></div>
-          <div class="GraphPoint6_Text">Не знаю за что хвататься</div>
-        </div>
-        <div class="GraphPoint7">
-          <div class="GraphPoint7_Circle"></div>
-          <div class="GraphPoint7_Text">
-            Трачу много времени на отбор инструментов
-          </div>
+      </div>
+      <div class="GraphPoint3">
+        <div class="GraphPoint3_Circle"></div>
+        <div class="GraphPoint3_Text">Получаю какую-то прибыль</div>
+      </div>
+      <div class="GraphPoint4">
+        <div class="GraphPoint4_Circle"></div>
+        <div class="GraphPoint4_Text">Не хватает мнения профессионала</div>
+      </div>
+      <div class="GraphPoint5">
+        <div class="GraphPoint5_Circle"></div>
+        <div class="GraphPoint5_Text">Не с кем обсудить свою торговлю</div>
+      </div>
+      <div class="GraphPoint6">
+        <div class="GraphPoint6_Circle"></div>
+        <div class="GraphPoint6_Text">Не знаю за что хвататься</div>
+      </div>
+      <div class="GraphPoint7">
+        <div class="GraphPoint7_Circle"></div>
+        <div class="GraphPoint7_Text">
+          Трачу много времени на отбор инструментов
         </div>
       </div>
       <img

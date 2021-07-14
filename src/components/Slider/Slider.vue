@@ -2,9 +2,9 @@
   <Swiper
     ref="{swiperRef}"
     :updateOnWindowResize="true"
-    :slidesPerView="windowWidth > 1000 ? 3 : 1"
+    :slidesPerView="windowWidth > 768 ? 3 : 1"
     :centeredSlides="true"
-    :navigation="true"
+    :navigation="windowWidth > 1101 ? true : false"
     :loop="true"
     class="mySwiper"
   >
